@@ -1,38 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(3, 0, 31);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+
 .App {
-  text-align: center;
+    min-height: 100vh;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sideBar {
+    flex: 3;
+    border-right: 1px solid rgb(100, 100, 100);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+    flex: 9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.logo {
+    margin-right: 1.6rem;
+    height: 2.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.brand {
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.upperSide {
+    padding: 2.5rem;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    /* height: auto; */
+}
+
+
+.upperSideTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+
+.midBtn {
+    background: #5a4bff;
+    border: none;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.midBtn:hover {
+    background: #4e3ee0;
+}
+
+.addBtn {
+    height: 2rem;
+    margin-right: 1rem;
+    object-fit: contain;
+}
+
+
+.upperSideBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 0;
+}
+
+.query {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: rgba(222, 222, 222, 1);
+    padding: 1.6rem;
+    width: 25rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(98, 98, 98, 1);
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.query:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.query>img {
+    margin-right: 1.6rem;
+    height: 1.8rem;
+    object-fit: contain;
+}
+
+
+.lowerSide {
+    padding: 2rem;
+}
+
+.listItems {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.listItems:hover {
+    color: #5a4bff;
+}
+
+.listItemsImg {
+    margin-right: 1.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
+
+.listItems:nth-child(1) .listItemsImg {
+    margin-right: 1rem;
+}
+
+.listItems:nth-child(3) .listItemsImg {
+    margin-right: 0.8rem;
+}
+
+
+.sideBar {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid rgb(100, 100, 100);
+}
+
+
+.lowerSide {
+    padding: 2rem;
+    margin-top: auto;
 }
